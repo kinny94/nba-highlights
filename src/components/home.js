@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import Featured from './featured';
 
 const URL = "https://api.myjson.com/bins/11rzz8";
+// hosting the file on this website
 class Home extends Component{
 
    
