@@ -10,8 +10,6 @@ const settings = {
     slidesToScroll: 1
 }
 
-const style = { color: 'red' }
-
 const generateSlides = ({ slides }) => {
     if( slides ){
         return(
@@ -19,14 +17,15 @@ const generateSlides = ({ slides }) => {
                 { 
                     slides.map(( item ) => {
                         return(
-                            <div key={ item.id } style={ style } className="item-slider" >
+                            <div key={ item.id }  style={{ background: `url(/images/covers/${ item.cover })`}} className="item-slider" >
+                            <h2>Hello</h2>
                                 <div className="caption">
                                     <h4>{ item.topic }</h4>
                                     <p>{ item.title }</p>
                                 </div>
                             </div>
-                        )
-                    }) 
+                        );
+                    })  
                 }
             </Slider>
         )
