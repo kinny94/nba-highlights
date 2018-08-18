@@ -22,6 +22,7 @@ const generateSlides = ({ slides }) => {
                                 <div className="caption">
                                     <h4>{ item.topic }</h4>
                                     <p>{ item.title }</p>
+                                    <p>Soimething</p>
                                 </div>
                             </div>
                         );
